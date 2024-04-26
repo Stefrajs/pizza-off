@@ -152,12 +152,14 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(15, 12, 12, 0.9), rgba(175, 68, 68, 0.9)), url(img/oFF.pdf);
+    background: linear-gradient(rgba(15, 12, 12, 0.9), rgba(175, 68, 68, 0.9)),  url('../img/600x700__2_-1-removebg-preview.png');
     background-position: right;
     background-repeat: no-repeat;
     background-size:contain;
     background-position-x: left;
+    background-position-y: top;
 }
+
 
 .hero-header img {
     animation: imgRotate 50s linear infinite;

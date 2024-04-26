@@ -8,7 +8,24 @@
     <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,7 +61,7 @@
   </head>
 
   <body>
-    <div class="container-xxl bg-white p-0">
+    <div class="container-xxl bg-white p-0" id="index">
       <!-- Spinner Start -->
       <div
         id="spinner"
@@ -65,9 +82,9 @@
         <nav
           class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0"
         >
-          <a href="" class="navbar-brand p-0">
+          <a href="#index" class="navbar-brand p-0 d-none" id="navbar-logo">
             <h1 class="text-primary m-0">
-              <i class="fa fa-utensils me-3"></i>
+              <img src="img/600x700__2_-1-removebg-preview.png" alt="logo" />
             </h1>
             <!-- <img src="img/logo.png" alt="Logo"> -->
           </a>
@@ -81,24 +98,22 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 pe-4">
-              <a href="index.html" class="nav-item nav-link active">Pocetna</a>
-              <a href="service.html" class="nav-item nav-link">Informacije</a>
-              <a href="about.html" class="nav-item nav-link">O nama</a>
-              <a href="menu.html" class="nav-item nav-link">Meni</a>
-              <div class="nav-item dropdown">
-                <a
-                  href="#"
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  >Tim</a
-                >
-                <div class="dropdown-menu m-0">
-                  <!-- <a href="booking.html" class="dropdown-item">Buking</a> -->
-                  <a href="team.html" class="dropdown-item">Nas tim</a>
-                  <a href="testimonial.html" class="dropdown-item">Utisci</a>
-                </div>
-              </div>
-              <a href="contact.html" class="nav-item nav-link">Kontakt</a>
+              <a href="#index" class="nav-item nav-link active" id="link-index"
+                >Početna</a
+              >
+              <a href="#menu" class="nav-item nav-link" id="link-menu">Meni</a>
+              <a href="#info" class="nav-item nav-link" id="link-info"
+                >Informacije</a
+              >
+              <a href="#about" class="nav-item nav-link" id="link-about"
+                >O nama</a
+              >
+              <a href="#contact" class="nav-item nav-link" id="link-contact"
+                >Kontakt</a
+              >
+              <a href="https://www.youtube.com/watch?v=HhGaYmWgb2U" class="nav-item nav-link" id="link-band" target="_blank"
+                >Bend</a
+              >
             </div>
             <!-- <a href="" class="btn btn-primary py-2 px-4">Bukiraj stavku</a> -->
           </div>
@@ -107,14 +122,14 @@
         <div class="container-xxl py-5 bg-dark hero-header mb-5">
           <div class="container my-5 py-5">
             <div class="row align-items-center g-5">
-              <div class="col-lg-6 text-center text-lg-start">
+              <div class="col-lg-6 text-center text-lg-start ps-5">
                 <h1 class="display-3 text-white animated slideInLeft">
-                  Iskljuci se<br />i prezalogaji!
+                  Isključi se<br />i prezalogaji!
                 </h1>
                 <p class="text-white animated slideInLeft mb-4 pb-2">
-                  Dobrodosli na nasu zvanicnu web stranicu! Ovde mozete
-                  pogledati asortiman nasih visokokvalitetnih proizvoda,
-                  pravljenih s' ljubavlju.
+                  Dobrodošli na nasu zvaničnu web stranicu! Ovde možete
+                  pogledati asortiman naših visokokvalitetnih proizvoda,
+                  pravljenih s ljubavlju.
                 </p>
               </div>
               <div class="col-lg-6 text-center text-lg-end overflow-hidden">
@@ -130,165 +145,8 @@
       </div>
       <!-- Navbar & Hero End -->
 
-      <!-- Service Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="service-item rounded pt-3">
-                <div class="p-4">
-                  <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                  <h5>Ljubazno osoblje</h5>
-                  <p>
-                    Kompetentni radnici su uvek spremni da vam pomognu i usluze
-                    vas na nacin koji vama odgovara.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item rounded pt-3">
-                <div class="p-4">
-                  <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                  <h5>Kvalitetna hrana</h5>
-                  <p>
-                    Nasi proizvodi su koncipirani prema najvisim standardima,
-                    odgovarajuci ukusu svakog potrosaca.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="service-item rounded pt-3">
-                <div class="p-4">
-                  <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                  <h5>Porudzbina preko telefona</h5>
-                  <p>
-                    Trenutno mozete poruciti putem poziva na broj lokala +381 00
-                    000 00 00
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-              <div class="service-item rounded pt-3">
-                <div class="p-4">
-                  <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                  <h5>Sugestije</h5>
-                  <p>
-                    Vase misljenje je krucijalno! Na sajtu mozete ostaviti
-                    komentar, savet ili kritiku. Hvala!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Service End -->
-
-      <!-- About Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-          <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-              <div class="row g-3">
-                <div class="col-6 text-start">
-                  <img
-                    class="img-fluid rounded w-100 wow zoomIn"
-                    data-wow-delay="0.1s"
-                    src="img/lokal.jpg"
-                  />
-                </div>
-                <div class="col-6 text-start">
-                  <img
-                    class="img-fluid rounded w-75 wow zoomIn"
-                    data-wow-delay="0.3s"
-                    src="img/lokal2.jpg"
-                    style="margin-top: 25%"
-                  />
-                </div>
-                <div class="col-6 text-end">
-                  <img
-                    class="img-fluid rounded w-75 wow zoomIn"
-                    data-wow-delay="0.5s"
-                    src="img/lokal3.jpg"
-                  />
-                </div>
-                <div class="col-6 text-end">
-                  <img
-                    class="img-fluid rounded w-100 wow zoomIn"
-                    data-wow-delay="0.7s"
-                    src="img/lokal4.jpg"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <h5
-                class="section-title ff-secondary text-start text-primary fw-normal"
-              >
-                O nama
-              </h5>
-              <h1 class="mb-4">
-                Dobrodosli u Off
-                <i class="fa fa-utensils text-primary me-2"></i>
-              </h1>
-              <p class="mb-4">
-                Picerija "Off" je nastala u aprilu 2024. iz zelje da majka i sin
-                spoje lepo i korisno. Dugogodisnje iskustvo steceno u oblastima
-                usluznih delatnosti, spremanja hrane i poslovanju, sada
-                oplemenjeno modernim, mladalackim idejama punim underground
-                elemenata, stvorilo je priliku za lepu porodicnnu saradnju koja
-                odise visokim kvalitetom i tvrdim zvukom.
-              </p>
-              <p class="mb-4">
-                Picerija je dobila ime po uzoru na ime novosadskog benda
-                "Offscore" koji stvara moderniju metal muziku.
-              </p>
-              <div class="row g-4 mb-4">
-                <div class="col-sm-6">
-                  <div
-                    class="d-flex align-items-center border-start border-5 border-primary px-3"
-                  >
-                    <h1
-                      class="flex-shrink-0 display-5 text-primary mb-0"
-                      data-toggle="counter-up"
-                    >
-                      19
-                    </h1>
-                    <div class="ps-4">
-                      <p class="mb-0">vrsta</p>
-                      <h6 class="text-uppercase mb-0">pica</h6>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div
-                    class="d-flex align-items-center border-start border-5 border-primary px-3"
-                  >
-                    <h1
-                      class="flex-shrink-0 display-5 text-primary mb-0"
-                      data-toggle="counter-up"
-                    >
-                      17
-                    </h1>
-                    <div class="ps-4">
-                      <p class="mb-0">vrsta</p>
-                      <h6 class="text-uppercase mb-0">dodataka</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- About End -->
-
       <!-- Menu Start -->
-      <div class="container-xxl py-5">
+      <div class="container-xxl py-5" id="menu">
         <div class="container">
           <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h5
@@ -302,73 +160,73 @@
           </div>
           <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
             <ul
-              class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5"
+              class="nav nav-pills d-flex flex-column flex-md-row justify-content-center align-items-center border-bottom mb-5"
             >
-              <li class="nav-item">
+              <li class="nav-item mx-4 mb-2">
                 <a
-                  class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                  class="d-flex align-items-center text-start active"
                   data-bs-toggle="pill"
                   href="#tab-1"
                 >
-                  <i class="fa fa-coffee fa-2x text-primary"></i>
+                  <i class="fa fa-pizza-slice fa-2x text-primary"></i>
                   <div class="ps-3">
                     <small class="text-body"></small>
-                    <h6 class="mt-n1 mb-0">Pice</h6>
+                    <h6 class="mt-n1 mb-0">Pizze</h6>
                   </div>
                 </a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item mx-4 mb-2">
                 <a
-                  class="d-flex align-items-center text-start mx-3 pb-3"
+                  class="d-flex align-items-center text-start"
                   data-bs-toggle="pill"
                   href="#tab-2"
                 >
                   <i class="fa fa-hamburger fa-2x text-primary"></i>
                   <div class="ps-3">
                     <small class="text-body"></small>
-                    <h6 class="mt-n1 mb-0">Sendvici</h6>
+                    <h6 class="mt-n1 mb-0">Sendviči</h6>
                   </div>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-4 mb-2">
                 <a
-                  class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                  class="d-flex align-items-center text-start"
                   data-bs-toggle="pill"
                   href="#tab-3"
                 >
-                  <i class="fa fa-utensils fa-2x text-primary"></i>
+                  <i class="fa fa-cheese fa-2x text-primary"></i>
                   <div class="ps-3">
                     <small class="text-body"></small>
-                    <h6 class="mt-n1 mb-0">Palacinke</h6>
+                    <h6 class="mt-n1 mb-0">Palačinke</h6>
                   </div>
                 </a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item mx-4 mb-2">
                 <a
-                  class="d-flex align-items-center text-start mx-3 pb-3"
+                  class="d-flex align-items-center text-start"
                   data-bs-toggle="pill"
                   href="#tab-4"
                 >
-                  <i class="fa fa-pizza-slice fa-2x text-primary"></i>
+                  <i class="fa fa-coffee fa-2x text-primary"></i>
                   <div class="ps-3">
                     <small class="text-body"></small>
-                    <h6 class="mt-n1 mb-0">Pizza</h6>
+                    <h6 class="mt-n1 mb-0">Pića</h6>
                   </div>
                 </a>
               </li>
               <!-- Dodajte više tabova po potrebi -->
-              <li class="nav-item">
+              <li class="nav-item mx-4 mb-2">
                 <a
-                  class="d-flex align-items-center text-start mx-3 pb-3"
+                  class="d-flex align-items-center text-start"
                   data-bs-toggle="pill"
                   href="#tab-5"
                 >
-                  <i class="fa fa-pizza-slice fa-2x text-primary"></i>
+                  <i class="fa fa-utensils fa-2x text-primary"></i>
                   <div class="ps-3">
                     <small class="text-body"></small>
-                    <h6 class="mt-n1 mb-0">Pizza</h6>
+                    <h6 class="mt-n1 mb-0">Dodaci</h6>
                   </div>
                 </a>
               </li>
@@ -387,72 +245,73 @@
                         style="width: 80px"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
-                        onclick="document.getElementById('modal-photo').src = 'img/menu-1.jpg'"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50">A1. Margarita</span>
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2"
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
+                          >
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
                             <span class="w-25">24cm</span>
                             <span class="w-25">32cm</span>
                             <span class="w-25">40cm</span>
                             <span class="w-25">50cm</span>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">480</h5>
-                            <h5 class="w-25">800</h5>
-                            <h5 class="w-25">1090</h5>
-                            <h5 class="w-25">1380</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
                   </div>
-
                   <div class="col-lg-6">
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
-                        onclick="document.getElementById('modal-photo').src = 'img/menu-2.jpg'"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50">A2. Margarita</span>
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2"
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
+                          >
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
                             <span class="w-25">24cm</span>
                             <span class="w-25">32cm</span>
                             <span class="w-25">40cm</span>
                             <span class="w-25">50cm</span>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">480</h5>
-                            <h5 class="w-25">800</h5>
-                            <h5 class="w-25">1090</h5>
-                            <h5 class="w-25">1380</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -461,39 +320,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/pizza-3007395_1280.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
-                        onclick="document.getElementById('modal-photo').src = 'img/pizza-3007395_1280.jpg'"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -502,36 +360,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -540,36 +400,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -578,36 +440,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/434360078_3827999637437117_8135280891568471944_n-modified.png"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -616,36 +480,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -654,36 +520,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -692,36 +560,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -730,36 +600,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -768,36 +640,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -806,36 +680,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -844,36 +720,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -882,36 +760,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -920,36 +800,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -958,36 +840,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -996,36 +880,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -1034,36 +920,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -1072,36 +960,38 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
+                        src="img/menu-1.jpg"
                         alt=""
                         style="width: 80px"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       />
-                      <div class="w-100 d-flex flex-column text-start ps-4">
-                        <h5
-                          class="d-flex justify-content-between border-bottom pb-2"
-                        >
-                          <span class="w-50"
-                            >A3. Margarita sa četiri vrste sira</span
+                      <div class="w-100 d-flex flex-column flex-md-row ps-4">
+                        <div class="d-flex w-md-50 w-100 flex-column pb-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
                           >
-                          <div
-                            class="w-50 d-flex text-primary justify-content-between text-end gap-2 align-items-end"
+                            <span class="text-start">Margarita</span>
+                          </h5>
+                          <span class="text-start">pelat, sir, origano</span>
+                        </div>
+                        <div class="d-flex w-md-50 flex-column">
+                          <h5
+                            class="d-flex text-primary justify-content-between text-start gap-2 border-bottom pb-2"
                           >
-                            <div class="w-25">24cm</div>
-                            <div class="w-25">32cm</div>
-                            <div class="w-25">40cm</div>
-                            <div class="w-25">50cm</div>
-                          </div>
-                        </h5>
-                        <div class="d-flex">
-                          <span class="w-50">pelat, sir, origano</span>
-                          <div
-                            class="d-flex w-50 justify-content-between text-end gap-2"
+                            <span class="w-25">24cm</span>
+                            <span class="w-25">32cm</span>
+                            <span class="w-25">40cm</span>
+                            <span class="w-25">50cm</span>
+                          </h5>
+                          <h5
+                            class="d-flex flex-row justify-content-between text-start gap-2"
                           >
-                            <h5 class="w-25">520</h5>
-                            <h5 class="w-25">880</h5>
-                            <h5 class="w-25">1210</h5>
-                            <h5 class="w-25">1540</h5>
-                          </div>
+                            <span class="w-25">480</span>
+                            <span class="w-25">800</span>
+                            <span class="w-25">1090</span>
+                            <span class="w-25">1380</span>
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -1503,6 +1393,163 @@
 
       <!-- Menu End -->
 
+      <!-- Info Start -->
+      <div class="container-xxl py-5" id="info">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                  <h5>Ljubazno osoblje</h5>
+                  <p>
+                    Kompetentni radnici su uvek spremni da vam pomognu i usluze
+                    vas na nacin koji vama odgovara.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                  <h5>Kvalitetna hrana</h5>
+                  <p>
+                    Nasi proizvodi su koncipirani prema najvisim standardima,
+                    odgovarajuci ukusu svakog potrosaca.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                  <h5>Porudzbina preko telefona</h5>
+                  <p>
+                    Trenutno mozete poruciti putem poziva na broj lokala +381 00
+                    000 00 00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                  <h5>Sugestije</h5>
+                  <p>
+                    Vase misljenje je krucijalno! Na sajtu mozete ostaviti
+                    komentar, savet ili kritiku. Hvala!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Info End -->
+
+      <!-- About Start -->
+      <div class="container-xxl py-5" id="about">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-100 wow zoomIn"
+                    data-wow-delay="0.1s"
+                    src="img/lokal.jpg"
+                  />
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-75 wow zoomIn"
+                    data-wow-delay="0.3s"
+                    src="img/lokal2.jpg"
+                    style="margin-top: 25%"
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-75 wow zoomIn"
+                    data-wow-delay="0.5s"
+                    src="img/lokal3.jpg"
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-100 wow zoomIn"
+                    data-wow-delay="0.7s"
+                    src="img/lokal4.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h5
+                class="section-title ff-secondary text-start text-primary fw-normal"
+              >
+                O nama
+              </h5>
+              <h1 class="mb-4">
+                Dobrodosli u Off
+                <i class="fa fa-utensils text-primary me-2"></i>
+              </h1>
+              <p class="mb-4">
+                Picerija "Off" je nastala u aprilu 2024. iz zelje da majka i sin
+                spoje lepo i korisno. Dugogodisnje iskustvo steceno u oblastima
+                usluznih delatnosti, spremanja hrane i poslovanju, sada
+                oplemenjeno modernim, mladalackim idejama punim underground
+                elemenata, stvorilo je priliku za lepu porodicnnu saradnju koja
+                odise visokim kvalitetom i tvrdim zvukom.
+              </p>
+              <p class="mb-4">
+                Picerija je dobila ime po uzoru na ime novosadskog benda
+                "Offscore" koji stvara moderniju metal muziku.
+              </p>
+              <div class="row g-4 mb-4">
+                <div class="col-sm-6">
+                  <div
+                    class="d-flex align-items-center border-start border-5 border-primary px-3"
+                  >
+                    <h1
+                      class="flex-shrink-0 display-5 text-primary mb-0"
+                      data-toggle="counter-up"
+                    >
+                      19
+                    </h1>
+                    <div class="ps-4">
+                      <p class="mb-0">vrsta</p>
+                      <h6 class="text-uppercase mb-0">pica</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div
+                    class="d-flex align-items-center border-start border-5 border-primary px-3"
+                  >
+                    <h1
+                      class="flex-shrink-0 display-5 text-primary mb-0"
+                      data-toggle="counter-up"
+                    >
+                      17
+                    </h1>
+                    <div class="ps-4">
+                      <p class="mb-0">vrsta</p>
+                      <h6 class="text-uppercase mb-0">dodataka</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
       <!--OVDE SAD ISPOD IDE ZA DODATKE, KAFU, COLU ITD.-->
 
       <!-- Reservation Start -->
@@ -1605,95 +1652,20 @@
       </div>
       <!-- Team End -->
 
-      <!-- Testimonial Start -->
-      <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-          <div class="text-center">
-            <h5
-              class="section-title ff-secondary text-center text-primary fw-normal"
-            >
-              Testimonial
-            </h5>
-            <h1 class="mb-5">Our Clients Say!!!</h1>
-          </div>
-          <div class="owl-carousel testimonial-carousel">
-            <div class="testimonial-item bg-transparent border rounded p-4">
-              <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-              <p>
-                Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
-                stet amet eirmod eos labore diam
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-1.jpg"
-                  style="width: 50px; height: 50px"
-                />
-                <div class="ps-3">
-                  <h5 class="mb-1">Client Name</h5>
-                  <small>Profession</small>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-item bg-transparent border rounded p-4">
-              <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-              <p>
-                Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
-                stet amet eirmod eos labore diam
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-2.jpg"
-                  style="width: 50px; height: 50px"
-                />
-                <div class="ps-3">
-                  <h5 class="mb-1">Client Name</h5>
-                  <small>Profession</small>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-item bg-transparent border rounded p-4">
-              <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-              <p>
-                Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
-                stet amet eirmod eos labore diam
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-3.jpg"
-                  style="width: 50px; height: 50px"
-                />
-                <div class="ps-3">
-                  <h5 class="mb-1">Client Name</h5>
-                  <small>Profession</small>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-item bg-transparent border rounded p-4">
-              <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-              <p>
-                Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
-                stet amet eirmod eos labore diam
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-4.jpg"
-                  style="width: 50px; height: 50px"
-                />
-                <div class="ps-3">
-                  <h5 class="mb-1">Client Name</h5>
-                  <small>Profession</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div
+        id="contact"
+        class="d-flex justify-content-center align-items-center"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4330.993647360607!2d19.832628615225815!3d45.26190345142417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b105a43e33dfd%3A0x9955fa316771157f!2sKraljevi%C4%87a%20Marka%2039%2C%20Novi%20Sad%2021000!5e0!3m2!1sen!2srs!4v1713647558124!5m2!1sen!2srs"
+          width="90%"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-      <!-- Testimonial End -->
-
       <!-- Footer Start -->
       <div
         class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
@@ -1701,9 +1673,7 @@
       >
         <div class="container py-5">
           <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-             
-            </div>
+            <div class="col-lg-3 col-md-6"></div>
             <div class="col-lg-3 col-md-6">
               <h4
                 class="section-title ff-secondary text-start text-primary fw-normal mb-4"
@@ -1746,9 +1716,7 @@
               <h5 class="text-light fw-normal">Sunday</h5>
               <p>10AM - 08PM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              
-            </div>
+            <div class="col-lg-3 col-md-6"></div>
           </div>
         </div>
         <div class="container">
@@ -1806,11 +1774,11 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg modal-dialog-centered">
-
-          <div class="modal-body">
-            <img id="modal-photo" src="" style="width: 800px; height: 600px" />
-          </div>
-
+        <div
+          class="modal-body d-flex justify-content-center align-items-center"
+        >
+          <img id="modal-photo" src="" style="width: 90%" />
+        </div>
       </div>
     </div>
   </body>
