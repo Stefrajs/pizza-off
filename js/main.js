@@ -15,13 +15,7 @@ const setActiveNavLink = (id) => {
   document.querySelectorAll(".nav-item.nav-link").forEach((link) => {
     link.addEventListener("click", () => setActiveNavLink(link.id));
   });
-
-  document.querySelectorAll("#dodaci .fa-utensils").forEach((icon) => {
-  icon.parentElement.addEventListener("click", function () {
-    console.log("Dodaci clicked"); // Ovdje možete dodati željenu funkcionalnost
-  });
-});
-
+  
 
   document.querySelectorAll("#menu .img-fluid").forEach((menuImage) => {
     menuImage.addEventListener("click", () => {
